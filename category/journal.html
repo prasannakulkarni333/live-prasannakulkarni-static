@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="generator" content="Pelican" />
+        <title>Prasanna Kulkarni - journal</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">Prasanna Kulkarni</a></h1>
+                <nav><ul>
+                    <li><a href="/category/fire.html">FIRE</a></li>
+                    <li class="active"><a href="/category/journal.html">journal</a></li>
+                    <li><a href="/category/journalcoding.html">journal,coding</a></li>
+                    <li><a href="/category/misc.html">misc</a></li>
+                    <li><a href="/category/sharing.html">sharing</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+
+            <aside id="featured" class="body">
+                <article>
+                    <h1 class="entry-title"><a href="/helpful-debian-commands.html">'Helpful Debian commands'</a></h1>
+<footer class="post-info">
+        <abbr class="published" title="2022-08-10T00:00:00+02:00">
+                Published: Wed 10 August 2022
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/prasanna-kulkarni.html">Prasanna Kulkarni</a>
+        </address>
+<p>In <a href="/category/journal.html">journal</a>.</p>
+
+</footer><!-- /.post-info --><p>Hodgepodge of commands from the internet for my OWN reference</p>
+<p>===</p>
+<p>Read at your own risk..</p>
+<p>````pi@raspberrypi:~ $ ls -lh /var/www/ \n
+    pi@raspberrypi:~ $ sudo chown -R pi:www-data /var/www/html/
+    pi@raspberrypi:~ $ sudo chmod -R 770 /var/www/html/
+    pi@raspberrypi:~ $ ls -lh /var/www/</p>
+<div class="highlight"><pre><span></span><code><span class="o">===</span><span class="w"></span>
+
+<span class="n">Hodgepodge</span><span class="w"> </span><span class="n">of</span><span class="w"> </span><span class="n">commands</span><span class="w"> </span><span class="n">from</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">internet</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="n">my</span><span class="w"> </span><span class="n">OWN</span><span class="w"> </span><span class="n">reference</span><span class="o">..</span><span class="w"></span>
+
+<span class="n">read</span><span class="w"> </span><span class="n">at</span><span class="w"> </span><span class="n">your</span><span class="w"> </span><span class="n">own</span><span class="w"> </span><span class="n">risk</span><span class="o">..</span><span class="w"></span>
+
+<span class="err">````</span><span class="n">pi</span><span class="err">@</span><span class="n">raspberrypi</span><span class="p">:</span><span class="o">~</span><span class="w"> </span><span class="o">$</span><span class="w"> </span><span class="n">ls</span><span class="w"> </span><span class="o">-</span><span class="n">lh</span><span class="w"> </span><span class="o">/</span><span class="k">var</span><span class="o">/</span><span class="n">www</span><span class="o">/</span><span class="w"> </span>\<span class="n">n</span><span class="w"></span>
+<span class="w">    </span><span class="n">pi</span><span class="err">@</span><span class="n">raspberrypi</span><span class="p">:</span><span class="o">~</span><span class="w"> </span><span class="o">$</span><span class="w"> </span><span class="n">sudo</span><span class="w"> </span><span class="n">chown</span><span class="w"> </span><span class="o">-</span><span class="n">R</span><span class="w"> </span><span class="n">pi</span><span class="p">:</span><span class="n">www</span><span class="o">-</span><span class="n">data</span><span class="w"> </span><span class="o">/</span><span class="k">var</span><span class="o">/</span><span class="n">www</span><span class="o">/</span><span class="n">html</span><span class="o">/</span><span class="w"></span>
+<span class="w">    </span><span class="n">pi</span><span class="err">@</span><span class="n">raspberrypi</span><span class="p">:</span><span class="o">~</span><span class="w"> </span><span class="o">$</span><span class="w"> </span><span class="n">sudo</span><span class="w"> </span><span class="n">chmod</span><span class="w"> </span><span class="o">-</span><span class="n">R</span><span class="w"> </span><span class="mi">770</span><span class="w"> </span><span class="o">/</span><span class="k">var</span><span class="o">/</span><span class="n">www</span><span class="o">/</span><span class="n">html</span><span class="o">/</span><span class="w"></span>
+<span class="w">    </span><span class="n">pi</span><span class="err">@</span><span class="n">raspberrypi</span><span class="p">:</span><span class="o">~</span><span class="w"> </span><span class="o">$</span><span class="w"> </span><span class="n">ls</span><span class="w"> </span><span class="o">-</span><span class="n">lh</span><span class="w"> </span><span class="o">/</span><span class="k">var</span><span class="o">/</span><span class="n">www</span><span class="o">/</span><span class="w"></span>
+</code></pre></div>
+
+<p>Python virtual env
+Install all the packages needed for your application to run in an enclosed application.</p>
+<p>sudo python3 -m venv /newdir
+make sure dir is created
+source venv/bin/activate
+Now your virtual environment should be a</p>
+<p>ssh keys gen in linux
+once you have created a public and private key and saved them to a location following is how you activate it</p>
+<p>eval ssh-agent</p>
+<p>ssh-add private key</p>
+<p>How to know the process on a port and stop it?</p>
+<p>Find process running on a PID and kill it
+sudo netstat -nlp | grep :80
+kill -9 pid
+env variables
+Install LAMP on a brand new raspberry pi
+https://www.instructables.com/Installing-LAMP-Linux-Apache-MySQL-PHP-on-a-Raspbe/</p>
+<p>still to do ftp</p>
+<p>if you have trouble loggin in phpmyadmin try this</p>
+<p>https://askubuntu.com/a/751494
+So what all do you need to do on a new pi?</p>
+<p>configure firewalss
+configure apache for hostname
+install lamp
+sudo apt update and upgrade
+$ sudo apt install apache2 -y</p>
+<p>You can now go to your IP address and visit your page</p>
+<p>You also need to enabel a2enmod 
+sudo a2enmod rewrite
+sudo systemctl restart apache2</p>                </article>
+            </aside><!-- /#featured -->
+                <section id="content" class="body">
+                    <h1>Other articles</h1>
+                    <hr />
+                    <ol id="posts-list" class="hfeed">
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/my-favorite-advices.html" rel="bookmark"
+                           title="Permalink to 'My favorite advices'">'My favorite advices'</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2022-08-10T00:00:00+02:00">
+                Published: Wed 10 August 2022
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/prasanna-kulkarni.html">Prasanna Kulkarni</a>
+        </address>
+<p>In <a href="/category/journal.html">journal</a>.</p>
+
+</footer><!-- /.post-info -->                <p>Some pearls of advice have stayed with me and I have implemented them in my daily life. Some of these were just passing comments and some were told to me with good will.</p>
+<p>However these pearls of wisdom reached me, they changed who I was and what I was doing …</p>
+                <a class="readmore" href="/my-favorite-advices.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/personal-blog-websites-out-of-dropbox.html" rel="bookmark"
+                           title="Permalink to 'Personal Blog Websites Out of Dropbox'">'Personal Blog Websites Out of Dropbox'</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2022-08-10T00:00:00+02:00">
+                Published: Wed 10 August 2022
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/prasanna-kulkarni.html">Prasanna Kulkarni</a>
+        </address>
+<p>In <a href="/category/journal.html">journal</a>.</p>
+
+</footer><!-- /.post-info -->                <h3>Thanks</h3>
+<p>https://blot.im/help</p>
+<p>===</p>
+<p><strike><a href="http://900dpi.com/" rel="nofollow">900dpi</a></strike>, <strike><a href="https://amb-1.com" rel="nofollow">Amb-1</a></strike>, <a href="https://asocialfolder.com/" rel="nofollow">asocialfolder</a>, <strike><a href="https://www.boxfolio.com/" rel="nofollow">Boxfolio</a></strike>, <strike><a href="http://brace.io/" rel="nofollow">Brace</a></strike>, <strike><a href="http://calepin.co/" rel="nofollow">Calepin</a></strike>, <a href="http://cloudcannon.com/" rel="nofollow">Cloud Cannon</a>, <a href="http://droppages.com/" rel="nofollow">Droppages</a>, <strike><a href="http://dropplets.com/" rel="nofollow">Dropplets</a></strike>, <a href="http://duet.to/" rel="nofollow">Duetto</a>, <strike><a href="http://fargo.io/" rel="nofollow">Fargo</a></strike>, <strike><a href="https://www.harp.io/" rel="nofollow">Harp</a></strike>, <a href="https://www.kissr.com/" rel="nofollow">Kissr</a>, <a href="https://montaigne.io" rel="nofollow">Montaigne</a>, <strike><a href="http://markbox.io/" rel="nofollow">Markbox</a></strike>, <strike><a href="https://www.pancake.io/" rel="nofollow">Pancake</a></strike>, <strike><a href="http://scriptogr.am/" rel="nofollow">Scriptogram</a></strike>, <a href="http://www.site44.com/" rel="nofollow">Site44</a>, <strike><a href="https://www.sitebox.io/" rel="nofollow">Sitebox</a></strike>, <strike><a href="http://skrivr.com/" rel="nofollow">Skrivr</a></strike>, <strike><a href="https://www.smallvictori.es/" rel="nofollow">Small Victories</a></strike>, <strike><a href="https://www.synkee.com/" rel="nofollow">Synkee</a></strike>, <strike><a href="http://updog.co/" rel="nofollow">Updog</a></strike></p>
+                <a class="readmore" href="/personal-blog-websites-out-of-dropbox.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/questions-to-ask-to-someone.html" rel="bookmark"
+                           title="Permalink to 'Questions to ask to someone '">'Questions to ask to someone '</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2022-08-10T00:00:00+02:00">
+                Published: Wed 10 August 2022
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/prasanna-kulkarni.html">Prasanna Kulkarni</a>
+        </address>
+<p>In <a href="/category/journal.html">journal</a>.</p>
+
+</footer><!-- /.post-info -->                <h1>From Read people like book by Patrick King</h1>
+<ul>
+<li>What kind of price would you work hard as far and wide punishment Cordova hardest to avoid</li>
+<li>How do you want to spend money and do you exit skimping on our skipping all together</li>
+<li>What is your most personal significant and meaningful …</li></ul>
+                <a class="readmore" href="/questions-to-ask-to-someone.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/subscriptions-log-of-subscriptions-that-i-pay-for.html" rel="bookmark"
+                           title="Permalink to 'Subscriptions – Log of subscriptions that I pay for'">'Subscriptions – Log of subscriptions that I pay for'</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2022-08-10T00:00:00+02:00">
+                Published: Wed 10 August 2022
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/prasanna-kulkarni.html">Prasanna Kulkarni</a>
+        </address>
+<p>In <a href="/category/journal.html">journal</a>.</p>
+
+</footer><!-- /.post-info -->                <hr>
+<p>Sometimes we don’t realize the changes that went through until a lot of time has passed. I feel the same holds true for how we use software and services. Before subscriptions it was a one time fees. But now companies are moving towards the subscription model. I thought about …</p>
+                <a class="readmore" href="/subscriptions-log-of-subscriptions-that-i-pay-for.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+                </ol><!-- /#posts-list -->
+                </section><!-- /#content -->
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>links</h2>
+                        <ul>
+                            <li><a href="https://getpelican.com/">Pelican</a></li>
+                            <li><a href="https://www.python.org/">Python.org</a></li>
+                            <li><a href="https://palletsprojects.com/p/jinja/">Jinja2</a></li>
+                            <li><a href="#">You can modify those links in your config file</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+
+                            <li><a href="#">You can add links in your config file</a></li>
+                            <li><a href="#">Another social link</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="https://getpelican.com/">Pelican</a>, which takes great advantage of <a href="https://www.python.org/">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>
