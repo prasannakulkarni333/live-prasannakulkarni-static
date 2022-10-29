@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="generator" content="Pelican" />
+        <title>Prasanna Kulkarni: Marketing Data Science 🔬 | Python 🐍 - python,machine-learnin</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">Prasanna Kulkarni: Marketing Data Science 🔬 | Python 🐍</a></h1>
+                <nav><ul>
+                    <li><a href="/category/fire.html">FIRE</a></li>
+                    <li><a href="/category/journal.html">journal</a></li>
+                    <li><a href="/category/journalcoding.html">journal,coding</a></li>
+                    <li><a href="/category/misc.html">misc</a></li>
+                    <li class="active"><a href="/category/pythonmachine-learnin.html">python,machine-learnin</a></li>
+                    <li><a href="/category/pythonmachine-learning.html">python,machine-learning</a></li>
+                    <li><a href="/category/sharing.html">sharing</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+
+            <aside id="featured" class="body">
+                <article>
+                    <h1 class="entry-title"><a href="/datascienev2.html">V2 Data Science</a></h1>
+<footer class="post-info">
+        <abbr class="published" title="2022-10-15T00:00:00+02:00">
+                Published: Sat 15 October 2022
+        </abbr>
+		<br />
+        <abbr class="modified" title="2022-10-15T00:00:00+02:00">
+                Updated: Sat 15 October 2022
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/prasanna-kulkarni.html">Prasanna Kulkarni</a>
+        </address>
+<p>In <a href="/category/pythonmachine-learnin.html">python,machine-learnin</a>.</p>
+<p>tags: <a href="/tag/machine-learning.html">machine-learning</a> <a href="/tag/python.html">python</a> </p>
+</footer><!-- /.post-info --><p>I have picked up below notes from various online courses I am taking.
+And sometimes added notes to it on my own.</p>
+<ol class="arabic simple">
+<li>What is the difference between the population and the sample? What is the difference between a parameter and a statistic?</li>
+</ol>
+<p>Population and parameter are the universal set.</p>
+<p>In statistics, a population is an entire pool from which a statistical sample is drawn. Examples of populations can be the number of newborn babies in North America, and the total number of tech startups in Asia.</p>
+<p>A parameter is any summary number, like an average or percentage, that describes the entire population.</p>
+<p>Since we can't measure the entire population, therefore, measuring its parameter is also difficult.</p>
+<p>For example, the average height of adult women in the United States is a parameter that has an exact value—we just don’t know what it is! or the average height of all CFA exam candidates in the world, the mean weight of U.S. taxpayers, and so on.</p>
+<p>We know what we have to collect and that collection is termed sample (a specific set from the population). Parameters associated with it would be sample parameters like sample mean or sample standard deviation which are referred to as statistics.</p>
+<p>pop sample.jpg</p>
+<ol class="arabic simple" start="2">
+<li>How to set the value of k for binom.pmf() and binom.cdf() functions?</li>
+</ol>
+<p>If we want to calculate the probability that the random variable X is exactly equal to x, then binom.pmf(k=x,...) will be used.</p>
+<p>If we want to calculate the probability that the random variable X is less than or equal to x, then binom.cdf(k=x,...) will be used.</p>
+<p>If we want to calculate the probability that the random variable X is greater than or equal to x, then 1-binom.cdf(k=x-1,...) will be used.</p>
+<ol class="arabic simple" start="3">
+<li>What are the Empirical rules of a normal distribution?</li>
+</ol>
+<p>The empirical rule states that 68% of the observations of a normal distribution fall within the first standard deviation from the mean (µ ± σ), 95% within the first two standard deviations from the mean (µ ± 2σ), and 99.7% within the first three standard deviations from the mean (µ ± 3σ).</p>
+<p>Let’s assume pizza delivery timings in a restaurant are known to be normally distributed.</p>
+<p>µ(mean delivery time): 30 minutes</p>
+<p>σ(standard deviation) : 5 minutes</p>
+<p>Using the Empirical Rule, we can determine that,</p>
+<p>68% of the delivery times are between 25-35 minutes (30 ± 5)</p>
+<p>95% of the delivery times are between 20-40 minutes (30 ± 2x5)</p>
+<p>99.7% of the delivery times are between 15-45 minutes (30 ±3x5)</p>
+<ol class="arabic simple" start="4">
+<li>What is the degree of freedom?</li>
+</ol>
+<p>The Degree of freedom of an estimate is the number of independent pieces of information that went into calculating the estimate. Let's understand with an example. Suppose there are 10 observations, and we have an estimate of the sum of those 10 observations. Now, if 9 of the ten observations are known to us, the 10th one can be calculated by subtracting the sum of 9 observations from the estimate of the sum of all observations. This way, if 9 of the observations are known to us, then the one left out observation is redundant. So, we say that the degrees of freedom for the estimate of the sum is 10 - 1 = 9.</p>
+<p>This applies universally to all other estimates as well. So, in general terminology for n observations, the degree of freedom for an estimate of these n observations is k = n-1.</p>
+<ol class="arabic simple" start="5">
+<li>What is PMF (Probability Mass Function), PDF (Probability Density Function), CDF (Cumulative Distribution Function), and PPF (Percent-Point Function) in simple terms?</li>
+</ol>
+<p>Suppose that X is a discrete random variable. Now, when we want to calculate mass probabilities, like P(X=x), we use the PMF function. This is the probability that X takes the value x. An example of discrete distribution is Binomial Distribution.</p>
+<p>The PDF function is similar to the PMF function except for the fact that it is used for continuous distributions. An example of a continuous distribution is Normal Distribution. If X is a continuous random variable, we calculate P(X=x) using the PDF function.</p>
+<p>The CDF function helps us calculate the cumulative probability P(X&lt;=x), which is the probability that X takes the value less than or equal to x. This is the cumulative distribution function and is applicable in both discrete and continuous cases.</p>
+<p>The PPF function is an inverse form of the CDF function.</p>
+<p>Suppose P(X&lt;=x) = alpha,</p>
+<p>where we are provided the alpha (probability) value and for that value, we want to calculate the value of x. This function is applicable in both discrete and continuous cases.</p>
+<ol class="arabic simple" start="6">
+<li>What are the functions used in Statistical Analysis from the Scipy Stats library to calculate probabilities in a normal distribution?</li>
+</ol>
+<p>pdf(x, loc=0, scale=1) - Probability density function.</p>
+<p>cdf(x, loc=0, scale=1) - Cumulative distribution function.</p>
+<p>ppf(q, loc=0, scale=1) - Percent point function (inverse of cdf - percentiles).</p>
+<p>Please refer to this page for the official Scipy documentation.</p>
+<ol class="arabic simple" start="7">
+<li>What is a z-score and how is it used in real-life scenarios?</li>
+</ol>
+<p>A z-score (also called the standard score) measures how many standard deviations below or above the mean a data point lies. The z-score is very useful as it enables us to compare two scores coming from two different normal populations. The two scores might be on two different scales however we can compare them using the z-score.</p>
+<p>Real-life application – Suppose you have appeared for two different competitive exams having different scoring systems. How will you compare your scores’ in two exams? Let’s assume that the competitive exams are popular and the distributions of their scores follow two different normal distributions. To compare your scores (coming from two different normal populations), you need to standardize each of your scores. Then, you can easily compare them.</p>
+<div class="section" id="types-of-machine-learning-algorithms">
+<h2>Types of machine learning algorithms</h2>
+<ul class="simple">
+<li>Supervised learning</li>
+<li>Unsupervised learning</li>
+<li>Reinforcement learning</li>
+<li>Recommender systems</li>
+</ul>
+<p>'Prasanna Kulkarni'_
+.. _'Prasanna Kulkarni':<a class="reference external" href="https://www.prasannakulkarni.com">https://www.prasannakulkarni.com</a></p>
+</div>
+<div class="section" id="linear-algebra">
+<h2>Linear Algebra</h2>
+<div class="section" id="graph">
+<h3>Graph</h3>
+<p>NetworkX, Louvain and Colorlover are the packages to study graphs.
+<a class="reference external" href="https://networkx.org/documentation/stable/auto_examples/drawing/plot_chess_masters.html#sphx-glr-auto-examples-drawing-plot-chess-masters-py">https://networkx.org/documentation/stable/auto_examples/drawing/plot_chess_masters.html#sphx-glr-auto-examples-drawing-plot-chess-masters-py</a></p>
+</div>
+<div class="section" id="matrix-m-n">
+<h3>Matrix (m*n)</h3>
+<p>is a rectangular array of numbers, symbols, or expressions, arranged in rows and columns.</p>
+</div>
+<div class="section" id="vector-m-1">
+<h3>Vector (m*1)</h3>
+<blockquote>
+<dl class="docutils">
+<dt>is a one-dimensional array of numbers, symbols, or expressions. It has only one row or column.</dt>
+<dd>You can do addition, subtraction, multiplication, and division of vectors and matrices.</dd>
+</dl>
+</blockquote>
+</div>
+<div class="section" id="determinant-det-a-a-d-b-c">
+<h3>Determinant(det(A)=a*d-b*c)</h3>
+<p>The determinant measures how much volumes change during a transformation.It is a scalar value that can be computed from the elements of a square matrix and encodes certain properties of the linear transformation described by the matrix.</p>
+</div>
+<div class="section" id="eigenvector-eigenvalue">
+<h3>Eigenvector &amp; Eigenvalue</h3>
+<p>is a vector that does not change direction during a linear transformation.</p>
+<p>is a scalar factor that describes the scaling of an eigenvector during a linear transformation.
+- Rank of a matrix is the number of linearly independent rows or columns of a matrix.
+- Eigenvector is the vector that does not change the direction but changes the could change value.</p>
+</div>
+<div class="section" id="covariance-metric">
+<h3>Covariance metric</h3>
+<blockquote>
+It helps us understand how far our random variable is spread out from the mean. Note: The function numpy.cov() in Python's Numpy variable can be used to get the covariance matrix in Python.</blockquote>
+</div>
+<div class="section" id="dimensionality-reduction">
+<h3>Dimensionality reduction</h3>
+<p>: we often deal with high-dimensional data, with lots of columns or &quot;features&quot; that represent the information collected about each observation</p>
+<div class="section" id="principal-component-analysis-pca">
+<h4>Principal component analysis (PCA)</h4>
+<blockquote>
+is a dimensionality reduction technique that can be used to reduce the number of features in a dataset while retaining as much information as possible.</blockquote>
+</div>
+<div class="section" id="t-sne">
+<h4>t-SNE</h4>
+<p>dimensionality reduction technique that is particularly well suited for the visualization of high-dimensional datasets. It converts similarities between data points to joint probabilities and tries to minimize the Kullback–Leibler divergence between the joint probabilities of the low-dimensional embedding and the high-dimensional data.
+KL divergence
+~~~~~~~~~~~~~
+is a measure of how one probability distribution is different from a second, reference probability distribution. It is often used as a loss function for training a generative adversarial network (GAN). Two important points to note about KL divergence:</p>
+<blockquote>
+The lower the KL divergence value, the better the two distributions match. If two distributions perfectly match, then it is zero.
+It is not symmetrical</blockquote>
+</div>
+</div>
+<div class="section" id="the-binomial-bernoulli-distribution">
+<h3>The Binomial/Bernoulli Distribution</h3>
+<p>A Bernoulli trial (or a Binomial trial) is a random experiment with exactly 2 possible outcomes, “success” or “failure”, in which the probability of success is the same every time the experiment is conducted.
+p = Probability of Success
+q = 1 - p = Probability of Failure
+n = Number of Trials
+x = Number of successes desired
+The Notation for a binomial distribution is
+X ~ B (n, p)
+The Bernoulli Distribution is a special case of the Binomial Distribution where the number of trials is equal to 1. Hence it represents the probability of an event occurring in 1 single trial, for example, the probability of getting heads when a coin is tossed only 1 time is 0.5.</p>
+</div>
+<div class="section" id="summary">
+<h3>Summary</h3>
+<p>Hypothesis Testing</p>
+<blockquote>
+This excerpt from a book takes a more detailed look at the foundations of hypothesis testing.
+This is a good summary document covering the foundational concepts of hypothesis testing and statistical inference.</blockquote>
+<p>PCA / t-SNE</p>
+<blockquote>
+An end-to-end comprehensive guide for PCA
+Check out this video on PCA by StatQuest: Click here
+This article explains Principal Component Analysis with example.
+This article shows how to use t-SNE.
+This is a good summary of the differences between PCA and t-SNE.
+This resource has an excellent Q&amp;A on t-SNE</blockquote>
+</div>
+<div class="section" id="scikitlearn">
+<h3>scikitlearn</h3>
+<p>Scikit-Learn</p>
+<p>Scikit-learn is an open-source Python library that is built upon NumPy, SciPy, and Matplotlib which is typically used in machine learning projects. Scikit-learn is focused on machine learning tools including mathematical, statistical, and general purpose algorithms that form the basis for many machine learning technologies by providing functionality for dimensionality reduction, feature selection, feature extraction, ensemble techniques, and inbuilt datasets. Scikit-learn is a top choice of academic and industrial organizations for carrying out a variety of tasks because of its effectiveness and adaptability.</p>
+<p>The essential features of scikit-learn to simplify machine learning includes:
+Unsupervised Learning Algorithms: This group of algorithms includes unsupervised neural networks, principal component analysis, cluster analysis, and factoring.
+Feature Extraction: Scikit-Learn allows you to extract features from both text and images.
+Dimensionality Reduction: With the help of this feature, the number of attributes in the data can be minimized for later feature selection, visualization, and summarization.
+Clustering: This feature allows the grouping of unlabeled data.
+Algorithms for Supervised Learning: There is an extremely high chance that any supervised machine learning algorithm you have heard of is included in the scikit-learn library. Such supervised learning algorithms are available in the scikit-learn toolkit and include generalized linear models, such as linear regression, decision trees, support vector machines, and Bayesian techniques. You will learn supervised learning techniques in the coming weeks.
+Cross-validation: Scikit-learn can be used to test the accuracy and validity of supervised models using unseen data.
+Ensemble methods: The predictions of various supervised models can be integrated. by using this feature.</p>
+<p><a class="reference external" href="https://docutils.sourceforge.io/docs/user/rst/quickref.html#hyperlink-targets">https://docutils.sourceforge.io/docs/user/rst/quickref.html#hyperlink-targets</a></p>
+<p><a class="reference external" href="https://www.sagepub.com/sites/default/files/upm-binaries/40007_Chapter8.pdf">https://www.sagepub.com/sites/default/files/upm-binaries/40007_Chapter8.pdf</a>
+<a class="reference external" href="https://onlinestatbook.com/2/logic_of_hypothesis_testing/logic_hypothesis.pdf">https://onlinestatbook.com/2/logic_of_hypothesis_testing/logic_hypothesis.pdf</a>
+<a class="reference external" href="https://www.analyticsvidhya.com/blog/2020/12/an-end-to-end-comprehensive-guide-for-pca/">https://www.analyticsvidhya.com/blog/2020/12/an-end-to-end-comprehensive-guide-for-pca/</a>
+<a class="reference external" href="https://www.youtube.com/watch?v=FgakZw6K1QQ">https://www.youtube.com/watch?v=FgakZw6K1QQ</a>
+<a class="reference external" href="https://www.analyticssteps.com/blogs/introduction-principal-component-analysis-machine-learning">https://www.analyticssteps.com/blogs/introduction-principal-component-analysis-machine-learning</a>
+<a class="reference external" href="https://distill.pub/2016/misread-tsne/">https://distill.pub/2016/misread-tsne/</a>
+<a class="reference external" href="https://www.geeksforgeeks.org/difference-between-pca-vs-t-sne/">https://www.geeksforgeeks.org/difference-between-pca-vs-t-sne/</a>
+<a class="reference external" href="https://lvdmaaten.github.io/tsne/">https://lvdmaaten.github.io/tsne/</a>
+<a class="reference external" href="https://www.youtube.com/watch?v=FgakZw6K1QQ">https://www.youtube.com/watch?v=FgakZw6K1QQ</a>
+<a class="reference external" href="https://www.youtube.com/watch?v=NEaUSP4YerM">https://www.youtube.com/watch?v=NEaUSP4YerM</a></p>
+</div>
+</div>
+                </article>
+            </aside><!-- /#featured -->
+                <section id="content" class="body">
+                    <h1>Other articles</h1>
+                    <hr />
+                    <ol id="posts-list" class="hfeed">
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/python.html" rel="bookmark"
+                           title="Permalink to Data Science">Data Science</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2022-10-15T00:00:00+02:00">
+                Published: Sat 15 October 2022
+        </abbr>
+		<br />
+        <abbr class="modified" title="2022-10-15T00:00:00+02:00">
+                Updated: Sat 15 October 2022
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/prasanna-kulkarni.html">Prasanna Kulkarni</a>
+        </address>
+<p>In <a href="/category/pythonmachine-learnin.html">python,machine-learnin</a>.</p>
+<p>tags: <a href="/tag/machine-learning.html">machine-learning</a> <a href="/tag/python.html">python</a> </p>
+</footer><!-- /.post-info -->                <p class="first last">Short version for index and feeds</p>
+
+                <a class="readmore" href="/python.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+                </ol><!-- /#posts-list -->
+                </section><!-- /#content -->
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>links</h2>
+                        <ul>
+                            <li><a href="https://getpelican.com/">Pelican</a></li>
+                            <li><a href="https://www.python.org/">Python.org</a></li>
+                            <li><a href="https://palletsprojects.com/p/jinja/">Jinja2</a></li>
+                            <li><a href="https://github.com/prasannakulkarni333">Github</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="https://getpelican.com/">Pelican</a>, which takes great advantage of <a href="https://www.python.org/">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>
